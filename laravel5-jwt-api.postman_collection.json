@@ -1,0 +1,203 @@
+{
+	"id": "05eab61e-7684-36d2-1ad7-617772846788",
+	"name": "laravel5-jwt-api",
+	"description": "",
+	"order": [
+		"cbf1a409-29f9-4c1f-3ade-14550ab8f0a8",
+		"f406ae7d-6ad8-28d1-cd33-2924bdec2eb9",
+		"1720d1e3-47e6-0292-1a84-7d6dba2122af",
+		"47113e9c-a295-ab3f-fbcc-28c4617e635b",
+		"a8d63907-9975-fdf6-8deb-82d86fdb1619"
+	],
+	"folders": [],
+	"timestamp": 1467295968513,
+	"owner": "",
+	"remoteLink": "",
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "1720d1e3-47e6-0292-1a84-7d6dba2122af",
+			"headers": "",
+			"url": "http://localhost:8000/api/user",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "05eab61e-7684-36d2-1ad7-617772846788",
+			"data": [
+				{
+					"key": "email",
+					"value": "mohaiminul.sust@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Users",
+			"description": "Get all users",
+			"descriptionFormat": "html",
+			"time": 1467297209006,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "47113e9c-a295-ab3f-fbcc-28c4617e635b",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDo4MDAwXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNDY3Mjk3Mzc3LCJleHAiOjE0NjczMDA5NzcsIm5iZiI6MTQ2NzI5NzM3NywianRpIjoiYzc5NDczY2MzNWQ0MWVkMmFkZmY3ZDdlYTQ1MWNkNjkifQ.T23Sz3SJOMJNprvFDiALISZNplN76H1Wqsv08D6QOYA\n",
+			"url": "http://localhost:8000/api/book/store",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "05eab61e-7684-36d2-1ad7-617772846788",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lost World",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "author_name",
+					"value": "Sir Arther Konan Doyle",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pages_count",
+					"value": "300",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Add Book",
+			"description": "add book for the user linked to given token in auth header",
+			"descriptionFormat": "html",
+			"time": 1467297706075,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a8d63907-9975-fdf6-8deb-82d86fdb1619",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDo4MDAwXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNDY3Mjk3Mzc3LCJleHAiOjE0NjczMDA5NzcsIm5iZiI6MTQ2NzI5NzM3NywianRpIjoiYzc5NDczY2MzNWQ0MWVkMmFkZmY3ZDdlYTQ1MWNkNjkifQ.T23Sz3SJOMJNprvFDiALISZNplN76H1Wqsv08D6QOYA\n",
+			"url": "http://localhost:8000/api/book",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "05eab61e-7684-36d2-1ad7-617772846788",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lost World",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "author_name",
+					"value": "Sir Arther Konan Doyle",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pages_count",
+					"value": "300",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Books",
+			"description": "get books",
+			"descriptionFormat": "html",
+			"time": 1467297804173,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cbf1a409-29f9-4c1f-3ade-14550ab8f0a8",
+			"headers": "",
+			"url": "http://localhost:8000/api/auth/signup",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "05eab61e-7684-36d2-1ad7-617772846788",
+			"data": [
+				{
+					"key": "name",
+					"value": "Mohaiminul Islam",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "mohaiminul.sust@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Sign UP",
+			"description": "signup request",
+			"descriptionFormat": "html",
+			"time": 1467295968512,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f406ae7d-6ad8-28d1-cd33-2924bdec2eb9",
+			"headers": "",
+			"url": "http://localhost:8000/api/auth/login",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "05eab61e-7684-36d2-1ad7-617772846788",
+			"data": [
+				{
+					"key": "email",
+					"value": "mohaiminul.sust@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Sign IN",
+			"description": "login request",
+			"descriptionFormat": "html",
+			"time": 1467296107740,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
