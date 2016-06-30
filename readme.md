@@ -1,4 +1,4 @@
-## Laravel API Boilerplate (JWT Edition)
+## Laravel JWT (JSON Web Token) API Scaffold
 
 Laravel API Boilerplate is a ready-to-use simple API boilerplate for stateless APIs mainly for Angular backend.
 
@@ -8,7 +8,7 @@ It also benefits from three pacakages:
 * Dingo API - [dingo/api](https://github.com/dingo/api)
 * Laravel-CORS [barryvdh/laravel-cors](http://github.com/barryvdh/laravel-cors)
 
-With a similar foundation is really easy to get up and running in no time. I just made an "integration" work, adding here and there something that I found useful.
+I just made an "integration" work, adding here and there.
 
 ## Configuration
 
