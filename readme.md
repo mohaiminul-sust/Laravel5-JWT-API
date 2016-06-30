@@ -10,6 +10,8 @@ It also benefits from three pacakages:
 
 I just made an "integration" work, adding here and there.
 
+Use the **included postman collection file** [laravel5-jwt-api.postman_collection.json](https://gitlab.com/mohaiminul-sust/Laravel5-JWT-API/blob/master/laravel5-jwt-api.postman_collection.json) for integration check. 
+
 ## Configuration
 
 As I already told before, this boilerplate is based on _dingo/api_ and _tymondesigns/jwt-auth_ packages. So, you can find many informations about configuration <a href="https://github.com/tymondesigns/jwt-auth/wiki/Configuration" target="_blank">here</a> and <a href="https://github.com/dingo/api/wiki/Configuration">here</a>.
