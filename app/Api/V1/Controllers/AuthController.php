@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Password;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Dingo\Api\Exception\ValidationHttpException;
 
-class AuthController extends Controller
-{
+class AuthController extends Controller{
+    
     use Helpers;
 
-    public function login(Request $request)
-    {
+    public function login(Request $request){
+
         $credentials = $request->only(['email', 'password']);
 
         $validator = Validator::make($credentials, [
@@ -42,8 +42,8 @@ class AuthController extends Controller
         return response()->json(compact('token'));
     }
 
-    public function signup(Request $request)
-    {
+    public function signup(Request $request){
+
         $signupFields = Config::get('boilerplate.signup_fields');
         $hasToReleaseToken = Config::get('boilerplate.signup_token_release');
 
@@ -70,8 +70,8 @@ class AuthController extends Controller
         return $this->response->created();
     }
 
-    public function recovery(Request $request)
-    {
+    public function recovery(Request $request){
+
         $validator = Validator::make($request->only('email'), [
             'email' => 'required'
         ]);
@@ -92,8 +92,8 @@ class AuthController extends Controller
         }
     }
 
-    public function reset(Request $request)
-    {
+    public function reset(Request $request) {
+        
         $credentials = $request->only(
             'email', 'password', 'password_confirmation', 'token'
         );
